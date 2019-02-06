@@ -1,2 +1,2 @@
 # Algorithm-Study
-Baekjoon Online Judge submissions archive https://www.acmicpc.net/
+Basic study on algorithm including Baekjoon Online Judge submissions https://www.acmicpc.net/
