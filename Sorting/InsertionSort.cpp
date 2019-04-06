@@ -4,11 +4,11 @@
 
 void InsertionSort(int arr[], int num) {
     int  i, j, key;
-    for (i = 1; i<num; i++) {
+    for (i=1; i<num; i++) {
         key = arr[i];
-        for (j = i; j>0; j--) {
-            if (arr[j - 1] > key) {
-                arr[j] = arr[j - 1];
+        for (j=i; j>0; j--) {
+            if (arr[j-1] > key) {
+                arr[j] = arr[j-1];
             }
             else {
                 arr[j] = key;

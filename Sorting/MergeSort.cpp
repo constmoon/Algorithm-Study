@@ -3,7 +3,6 @@
 #include <ctime>
 
 void Merge(int arr[], int left, int mid, int right) {
-    
     int* sorted = new int[right+1];
     int posA, posB, k;
     posA = left, posB = mid+1, k = left;
@@ -24,13 +23,13 @@ void Merge(int arr[], int left, int mid, int right) {
         }
     }
     else {
-        for (int i = posA; i <= mid; i++) {
+        for (int i=posA; i<=mid; i++) {
             sorted[k] = arr[i];
             k++;
         }
     }
     
-    for (int i = left; i <= right; i++) {
+    for (int i=left; i<=right; i++) {
         arr[i] = sorted[i];
     }
     
@@ -39,7 +38,7 @@ void Merge(int arr[], int left, int mid, int right) {
 
 void MergeSort(int arr[], int left, int right) {
     int mid;
-    if (left<right) {
+    if (left < right) {
         mid = (left + right) / 2;    // split to 2 array
         MergeSort(arr, left, mid);
         MergeSort(arr, mid+1, right);
